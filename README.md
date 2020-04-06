@@ -1,3 +1,10 @@
+This project  lets people view and vote on cheesy jokes. To generate jokes, I've used the ICanHazDadJoke API.
+1.When the page loads, it  fetch 10  new jokes.
+2.This project  lists the jokes, along with a “vote-up” button, a “vote-down” button, and the net score for each joke.When Users vote,  the net score will be updated.
+3.There are no duplicate jokes shown (New Set())
+4.The list of jokes store with votes in local storage. When users visit the project, it  show saved jokes, rather than fetching new jokes. However, the user  still  able to generate new jokes via the button, and these new jokes replace the ones in local storage.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
