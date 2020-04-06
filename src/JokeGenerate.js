@@ -68,28 +68,28 @@ this.setState(st=>({
     render() {
       
       if(this.state.loading){
-          return( 
-              <div className="Spinner">
-              <i className="far fa-8x fa-laugh fa-spin"></i>
-              <h1 >Loading....</h1>
-              </div>
-              )
+ return( 
+  <div className="Spinner">
+  <i className="far fa-8x fa-laugh fa-spin"></i>
+ <h1 >Loading....</h1>
+ </div>
+    )
          
       }
  
-        return ( 
-            <div className="JokeList">
-         <div className="JokeList__Sidebar">
-            <h1 className="JokeListSidebar__title"> <span>Dad</span> Jokes</h1>  
-            <img className="JokeListSidebar__img"  alt="smile" src='https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg' />
-            <button className="JokeListSidebar__button" onClick={this.handleClick}>Fetch Jokes</button>
-            </div>
-            <div className="JokeList_jokes">
-            {this.state.jokes.map(joke=> 
-                <Joke key={joke.id} joke={joke.text} vote={joke.vote} Upvote={()=>this.handleVote(joke.id,1)} Downvote={()=>this.handleVote(joke.id,-1)}/>)}
-                </div>
+return ( 
+<div className="JokeList">
+ <div className="JokeList__Sidebar">
+ <h1 className="JokeListSidebar__title"> <span>Dad</span> Jokes</h1>  
+    <img className="JokeListSidebar__img"  alt="smile" src='https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg' />
+     <button className="JokeListSidebar__button" onClick={this.handleClick}>Fetch Jokes</button>
+ </div>
+<div className="JokeList_jokes">
+ {this.state.jokes.map(joke=> 
+     <Joke key={joke.id} joke={joke.text} vote={joke.vote} Upvote={()=>this.handleVote(joke.id,1)} Downvote={()=>this.handleVote(joke.id,-1)}/>)}
+ </div>
             
-            </div>
+ </div>
         )
     }
 }

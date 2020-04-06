@@ -50,7 +50,7 @@ height:80%;
 .JokeListSidebar__button{
     
     width:50%;
-    padding:1rem 2rem;
+    padding:1rem 1rem;
     border-radius:2rem;
     color:white;
     outline:none;
@@ -227,4 +227,11 @@ box-shadow:0px 15px 30px rgba(0,0,0,0.25);
       transform: translate(10px, -9px) rotate(2.5deg);
     }
   }
-  
+  @media screen and (max-width: 700px) {
+    .JokeList__Sidebar{
+      width:50%
+  }
+  .JokeList_jokes{
+    width:50%
+  }
+}

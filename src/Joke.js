@@ -63,27 +63,22 @@ else{
   
   
     render() {
-  
-        return (
-            <div className="Joke">
-          <div className="Joke__buttons">
-          <i onClick={this.props.Upvote} className="fas fa-arrow-up"></i>
-        <span className="Joke__vote"  style={{border:`2px solid ${this.colorGen()}`}}> 
-       {this.props.vote}
-        </span> 
-          <i onClick={this.props.Downvote} className="fas fa-arrow-down">
-          </i>
-          </div>
-          
-          <div className="Joke__text">
-          {this.props.joke}
-          </div>
-          <div className="Joke_emoji">
-          <i className={this.emojiGen()} ></i>
-         
-          </div>
-         
-            </div>
+   return (
+  <div className="Joke">
+  <div className="Joke__buttons">
+ <i onClick={this.props.Upvote} className="fas fa-arrow-up"></i>
+<span className="Joke__vote"  style={{border:`2px solid ${this.colorGen()}`}}> 
+ {this.props.vote}
+ </span> 
+ <i onClick={this.props.Downvote} className="fas fa-arrow-down"> </i>
+ </div>
+  <div className="Joke__text">
+   {this.props.joke}
+  </div>
+  <div className="Joke_emoji">
+ <i className={this.emojiGen()} ></i>
+  </div>
+  </div>
         )
     }
 }
